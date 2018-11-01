@@ -131,3 +131,17 @@ app.post('/:username/:platform/:leagueId/team/:teamId/roster', (req, res) => {
 });
 
 app.listen(app.get('port'), function () { return console.log('Madden Data is running on port', app.get('port')) });
+
+<script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCrb7QF7HlepxGz2hDEOgVt0wp8iMd9I2w",
+    authDomain: "leaguer-db.firebaseapp.com",
+    databaseURL: "https://leaguer-db.firebaseio.com",
+    projectId: "leaguer-db",
+    storageBucket: "leaguer-db.appspot.com",
+    messagingSenderId: "1091006261969"
+  };
+  firebase.initializeApp(config);
+</script>
